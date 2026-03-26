@@ -191,6 +191,7 @@ int main()
     for(int i=0;i<n;i++)
         //v[i] = rand();
         //v[i] = i;
+        //if(i%10 == 0) v[i] = rand(); else v[i] = i;
     x = clock() - x;
     printf("generation took %f seconds / %d clocks\n",(double)x/CLOCKS_PER_SEC,x);
 
@@ -199,7 +200,7 @@ int main()
     write(serial_port, send, sizeof(send));
     //qsort(v, n, sizeof(int), comp);
     //mergesort(v,0,n-1);
-    //countingsort(v,n);
+    //countingsort(v,n);s
     x = clock() - x;
     write(serial_port, end, sizeof(end));
     printf("sorting took %f seconds / %d clocks\n",x,(double)x/CLOCKS_PER_SEC,x);
