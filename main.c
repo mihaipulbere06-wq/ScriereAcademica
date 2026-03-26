@@ -200,7 +200,7 @@ int main()
     write(serial_port, send, sizeof(send));
     //qsort(v, n, sizeof(int), comp);
     //mergesort(v,0,n-1);
-    //countingsort(v,n);s
+    //countingsort(v,n);
     x = clock() - x;
     write(serial_port, end, sizeof(end));
     printf("sorting took %f seconds / %d clocks\n",x,(double)x/CLOCKS_PER_SEC,x);
